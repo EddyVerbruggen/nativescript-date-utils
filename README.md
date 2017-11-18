@@ -19,22 +19,13 @@ tns plugin add nativescript-date-utils
 ```
 
 ## Running the demo app
-After cloning run `npm run demo.ios` / `npm run demo.android` from the `/src` folder.
+After cloning, go into the `src` folder and run `npm run demo.ios` or `npm run demo.android`.
 
 ## API
 
-### is24hFormat
+### `is24hFormat`
 
 Determine whether or not the user's device is currently running in 24 hour format.
-
-#### JavaScript
-
-```js
-var DateUtils = require("nativescript-date-utils").DateUtils;
-DateUtils.is24hFormat().then(function (is24h) {
-  console.log('This device is currently ' + (is24h ? '' : 'not') + ' running in 24 hour format.');
-});
-```
 
 #### TypeScript
 
@@ -43,5 +34,15 @@ import { DateUtils } from 'nativescript-date-utils';
 
 DateUtils.is24hFormat().then((is24h: boolean) => {
   console.log(`This device is currently ${is24h ? '' : 'not'} running in 24 hour format.`);
+});
+```
+
+#### JavaScript
+
+```js
+var DateUtils = require("nativescript-date-utils").DateUtils;
+
+DateUtils.is24hFormat().then(function (is24h) {
+  console.log('This device is currently ' + (is24h ? '' : 'not') + ' running in 24 hour format.');
 });
 ```
