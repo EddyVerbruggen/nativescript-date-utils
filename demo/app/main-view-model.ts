@@ -6,7 +6,7 @@ export class HelloWorldModel extends Observable {
 
   constructor() {
     super();
-    new DateUtils().is24hFormat().then(is24h => {
+    DateUtils.is24hFormat().then(is24h => {
       this.set("is24hFormat", is24h);
     });
   }

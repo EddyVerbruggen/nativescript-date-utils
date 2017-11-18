@@ -1,2 +1,3 @@
-export * from "./date-utils.ios";
-export * from "./date-utils.common";
+export const DateUtils: {
+  is24hFormat: () => Promise<boolean>;
+};
